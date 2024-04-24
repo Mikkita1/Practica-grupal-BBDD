@@ -1,2 +1,3 @@
 # Practica Grupal BBDD
-## a. [Descripción de la aplicación](Descripción-aplicación.md)
+### A. [Descripción de la aplicación](Descripción-aplicación.md)
+### B. [Diseño de la Base de Datos]
