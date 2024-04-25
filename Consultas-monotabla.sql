@@ -4,4 +4,4 @@ SELECT * FROM mascota WHERE especie="perro";
 -- Nos muestra los datos de las mascotas que sean perros
 
 SELECT * FROM citas WHERE fecha='2024-04-%';
--- Nos muetra las citas de este mes
+-- Nos muestra las citas de este mes
