@@ -1,0 +1,1 @@
+-- ¿Qué triggers pensáis que necesita la base de datos?, crea 2 trigger por tabla.
