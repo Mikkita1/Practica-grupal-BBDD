@@ -7,3 +7,4 @@
 ### F. [Vistas](vistas.sql)
 ### G. [Usuarios y permisos](usuarios-permisos.sql)
 ### H. [Triggers](triggers.sql)
+### I. [Procedimientos almacenados](procedimientos-almacenados.sql)
