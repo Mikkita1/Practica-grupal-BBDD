@@ -1,0 +1,1 @@
+-- ¿Qué procedimientos almacenados podría necesitar la base de datos?, crea 2 procedimientos almacenados.
