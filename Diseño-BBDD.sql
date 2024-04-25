@@ -29,6 +29,7 @@ CREATE TABLE citas (
   num_cita int auto_increment primary key not null,
   fecha date,
   hora time,
+  causa varchar(200),
   foreign key (id_mascota) references mascota(id_mascota)
 );
 
@@ -52,4 +53,5 @@ INSERT INTO mascota VALUES
 ("Mikita", "huron", "americano", "hembra", "marron oscuro", '2005-08-19', 03657789),
 ("Cersey", "gato", "persa", "hembra", "beis", '2020-12-05', 05862184);
 
-INSERT INTO citas
+INSERT INTO citas (fecha, hora, causa, id_mascota) VALUES
+
