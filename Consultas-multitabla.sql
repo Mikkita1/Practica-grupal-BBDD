@@ -2,10 +2,12 @@
 
 SELECT *
 FROM citas ct
-INNER JOIN mascota m ON ct.
+INNER JOIN mascota m ON ct.id_mascota = m.id_mascota
+WHERE m.especie="gato";
+-- Nos muestra las citas en las que las mascotas son gatos
 
-
-SELECT CodigoPedido, Cantidad, PrecioUnidad, Nombre
-FROM detallepedidos dp
-INNER JOIN productos p ON dp.CodigoProducto=p.Codigoproducto
-WHERE p.Gama='Herramientas';
+SELECT *
+FROM cliente cl
+INNER JOIN mascota m ON m.dni = cl.dni
+WHERE m.genero="hembra";
+--Nos muestra los clientes que tienen de mascotas a hembras
