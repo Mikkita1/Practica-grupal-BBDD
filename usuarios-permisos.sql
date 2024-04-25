@@ -1,0 +1,1 @@
+-- Define qué usuarios crearías para que puedan acceder al SGBD y qué permisos tendrán.
