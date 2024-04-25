@@ -1,0 +1,1 @@
+-- ¿Qué vistas le proporcionaríais a cada usuario teniendo en cuenta las funciones que van a desarrollar? crea mínimo 2 vistas.
