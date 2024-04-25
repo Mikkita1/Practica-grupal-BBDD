@@ -6,3 +6,4 @@
 ### E. [Inserciones, modificaciones y eliminación de datos](inserciones-modificaciones-eliminaciones.sql)
 ### F. [Vistas](vistas.sql)
 ### G. [Usuarios y permisos](usuarios-permisos.sql)
+### H. [Triggers](triggers.sql)
