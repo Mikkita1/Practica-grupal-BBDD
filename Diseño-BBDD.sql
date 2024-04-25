@@ -1,28 +1,30 @@
 -- Diseño de la Base de Datos
 
-CREATE DATABASE IF NOT EXIST CitasVeterinarias;
+CREATE DATABASE IF NOT EXISTS CitasVeterinarias;
 
 USE CitasVeterinarias;
 
 CREATE TABLE cliente (
-  dni int(8) primary key not null,
+  dni int(8) not null,
   nombre varchar(25),
   apellido1 varchar(25),
   apellido2 varchar(25),
   direccion varchar(100),
   telefono int(9),
-  email varchar(50)
+  email varchar(50),
+  CONSTRAINT dni PRIMARY KEY (dni)
 );
 
 CREATE TABLE mascota (
-  id_mascota int auto_increment primary key not null,
+  id_mascota int auto_increment not null,
   nombre varchar(25),
   especie varchar(25),
   raza varchar(25),
   genero varchar(10),
   color varchar(25),
   fecha_nacimiento date,
-  CONSTRAINT dni_propietario foreign key (dni) references cliente(dni)
+  CONSTRAINT id_mascota PRIMARY KEY id_mascota(id_mascota),
+  CONSTRAINT dni_cliente foreign key (dni) references cliente(dni) on delete set null on update cascade
 );
 
 CREATE TABLE citas (
@@ -30,7 +32,7 @@ CREATE TABLE citas (
   fecha date,
   hora time,
   causa varchar(200),
-  foreign key (id_mascota) references mascota(id_mascota)
+  CONSTRAINT id_mascota foreign key (id_mascota) references mascota(id_mascota) on delete set null on update cascade
 );
 
 -- Datos de la tabla cliente
@@ -53,5 +55,12 @@ INSERT INTO mascota VALUES
 ("Mikita", "huron", "americano", "hembra", "marron oscuro", '2005-08-19', 03657789),
 ("Cersey", "gato", "persa", "hembra", "beis", '2020-12-05', 05862184);
 
+-- Datos de la tabla citas
 INSERT INTO citas (fecha, hora, causa, id_mascota) VALUES
+('2024-04-03', '12:00:00', "vacuna rabia", 1),
+('2024-03-28', '17:30:00', "revision", 2),
+('2024-05-12', '11:00:00', "vacuna heptavalente", 3),
+('2024-03-29', '10:15:00', "castracion", 4),
+('2024-06-03', '18:40:00', "revision", 7),
+('2024-04-23', '19:00:00', "vacuna moquillo", 8);
 
